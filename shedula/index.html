@@ -242,13 +242,13 @@
 							<h2 class="e-head">Subscribe to Newsletter</h2>
 							<p class="e-para">Get updates and information about Shedula</p>
 						</div>
-						<div class="sub-details">
+						<form method="post" class="sub-details">
 							<label name="Username">Name</label><br>
-							<input class="d-name detail" type="name" name="Username" placeholder="Enter your Name"/><br>
+							<input class="d-name detail" id="d-name" type="name" name="Username" placeholder="Enter your Name"/><br>
 							<label  name="Username">Email Address</label><br>
 							<input class="d-email detail" name="E-mail" placeholder="Enter Email Address" type="email"/><br>
-							<button class="send-btn btn">Subscribe</button>
-						</div>						
+							<button class="send-btn btn" onsubmit="return validateForm()">Subscribe</button>
+						</form>						
 					</div>
 				</div>
 			</section>
@@ -394,6 +394,12 @@
 		<div style="background-color:aqua ; width: 30%;">Light Blue</div>
 	</div>
 -->
+
+	<!--
+	- External JS File
+	-->
+	<script src="assets/js/index.js"></script>
+
 	<!--
 	- ionicon link
 	-->
