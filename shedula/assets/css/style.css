@@ -482,7 +482,6 @@ input[type="datetime-local"]{
   height: 340px;
   margin-top: -70px;
   margin-bottom: -20px;
-  z-index: 4;
   border-radius: 30px;
   padding: 20px;
 }
