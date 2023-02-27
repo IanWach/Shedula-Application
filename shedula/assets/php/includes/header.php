@@ -11,7 +11,7 @@
             <ul class="navbar-list">
 
                 <li>
-                    <a href="#" class="navbar-link" data-nav-link>Home</a>
+                    <a href="/shedula/index.html#home" class="navbar-link" data-nav-link>Home</a>
                 </li>
 
                 <li>

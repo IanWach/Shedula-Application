@@ -12,29 +12,30 @@
     <section class="signup-section">
         <div class="container">
             <form class="signup-form">
-                <div>
+                <div class="signup">
                     <label name="frname">First Name</label>
                     <input class="" id="" type="name" name="frname" placeholder="First Name" \>
                 </div>
-                <div>
+                <div class="signup">
                     <label class="" id="" name="lname">Last Name</label>
                     <input class="" id="" name="lname" type="name" placeholder="Last Name" \>
                 </div>
-                <div>
+                <div class="signup">
                     <label class="" name="e-mail" id="">Email Address</label>
                     <input class="" id="" type="email" name="e-mail" placeholder="Your Email" />
                 </div>
-                <div>
+                <div class="signup">
                     <label name="pass">Password</label>
                     <input class="" name="pass" type="password" placeholder="Enter Password"/>
                 </div>
-                <div>
+                <div class="signup">
                     <label name="cpass">Confirm Password</label>
                     <input class="" name="cpass" type="password" placeholder="Confirm Password"/>
                 </div>
                 <input class ="btn" type="submit"/>
             </form>
         </div>
+        <div><a href="./login.php">Have an Account?</a></div>
     </section>
     <?php include("./includes/footer.php") ?>
 </body>
