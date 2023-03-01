@@ -12,7 +12,7 @@
     <section class="signup-section">
         <div class="container">
             <h1>SIGNUP FORM</h1>
-            <form class="signup-form" action="./signup.php" method="post">
+            <form class="signup-form" action="<?php $_PHP_SELF ?>" method="post">
                 <div class="signup">
                     <label class="signup-label" name="frname">First Name</label>
                     <input class="signup-input" id="" type="name" name="frname" placeholder="First Name" \>
@@ -38,26 +38,27 @@
             </form>
         </div>
     </section>
-    <?php 
-    $error =NULL;      
+    <?php
+    $error =null;
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $FirstName = $_POST['frname'];
-            $LastName  = $_POST['lname'];
-            $EmailAddress = $_POST['e-mail'];
-            $Password = $_POST['pass'];
-            $ConfirmPassword = $_POST['cpass'];
+        $FirstName = $_POST['frname'];
+        $LastName  = $_POST['lname'];
+        $EmailAddress = $_POST['e-mail'];
+        $Password = $_POST['pass'];
+        $ConfirmPassword = $_POST['cpass'];
         //Conditions to ensure no empty Inputs and Short attributes
-        if ($Password != $ConfirmPassword)
-        echo "The Passwords do Not Match";
-        elseif ($FirstName == "" || $LastName == "")
-        echo "Enter the names correctly";
-        elseif ($EmailAddress == "")
-        echo "Enter the Email Address correctly";
-        else
-        echo "Proceed";
-        echo $Password;
+        if ($Password != $ConfirmPassword) {
+            echo "The Passwords do Not Match";
+        } elseif ($FirstName == "" || $LastName == "") {
+            echo "Enter the names correctly";
+        } elseif ($EmailAddress == "") {
+            echo "Enter the Email Address correctly";
+        } else {
+            echo "Proceed";
         }
-    
+        echo $Password;
+    }
+
     ?>
     <?php include("./includes/footer.php") ?>
 </body>
