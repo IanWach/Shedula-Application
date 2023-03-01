@@ -51,6 +51,8 @@
         echo "The Passwords do Not Match";
         elseif ($FirstName == "" || $LastName == "")
         echo "Enter the names correctly";
+        elseif ($EmailAddress == "")
+        echo "Enter the Email Address correctly";
         else
         echo "Proceed";
         echo $Password;

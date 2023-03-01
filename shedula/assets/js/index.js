@@ -2,7 +2,6 @@
 
 function validateForm(){
     var userName = document.getElementsById("d-name").value;
-    if(userName == ""){
+    if(userName == "")
         alert("Kindly Enter your Name To Proceed");
-    }
 }
