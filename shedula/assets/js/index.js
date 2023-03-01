@@ -1,4 +1,4 @@
-/*Email Subscription Validation */
+/*Email Subscription Validation Script */
 
 function validateForm(){
     var userName = document.getElementsById("d-name").value;
